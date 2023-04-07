@@ -1,0 +1,96 @@
+<!-- 
+======================================
+; Title: Assignment 4.2 Pets-R-Us
+; Author: Professor Kumar
+; Date: April 5, 2023
+; Modified By: Hannah Del Real
+; Description: HTML coding for Grooming Service Page of Pets-R-Us web-page.
+; Sources Used: 
+; Bellevue University Web Dev GitHub: https://github.com/buwebdev/web-340/tree/master/week-4
+; Node.js Setup using Express, HTML, CSS, JS & EJS: https://www.youtube.com/watch?v=A01KtJTv1oc
+;=====================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pet's-R-US Assignment</title>
+        <link rel="stylesheet" href="/styles/site.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,500&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="navbar">
+                <a href="/">Home</a>
+                <div class="dropdown">
+                    <button class="dropBtn">Services
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="services-content">
+                            <a href="#">Boarding</a>
+                            <a href="/grooming">Grooming</a>
+                            <a href="#">Training</a>
+                    </div>
+                </div>    
+                    <a href="">Customers</a>
+                    <a href="">Booking</a>
+                    <a href="">Appointments</a>
+            </div>  
+        </header>
+
+        <section class="hero">
+            <div class="backgroundImage"></div>
+            <h1 class="landing-title">Pets-R-US</h1>
+            <h3>Your one stop shop for all your pet's needs!</h3>
+        </section> 
+        
+        <section class="grooming">
+            <div class="grooming-container">
+                <h2 class="title">Grooming Services</h2>
+                <p class="groom-content"> Image is everything, and just like people, pets also want to look and feel their best.</p>
+                <p class="groom-content"> Our Pets-R-Us groomers offer high quality styling services to help owners continue to keep their pets looking healthy and beautiful. Our staff is trained to ensure a positive experience for both you and your pet. Our grooming services range from full service to a la cart options, so we are here for you whether your pet needs the works or just a touch up. To ensure your pet has is given the utmost care, our staff will do a brief assessment of your pet's skin, coat, ears, nails, and teeth so that they can properly address any unique needs. When booking your appointment, we highly recommend providing us with any specific allergies or concerns so that we can provide you and your pet with the appropriate accommodations to ensure only the best care. <br></p>
+                    <hr class="hr-solid"><br>
+                <img src="images/grooming-pet.jpg" alt="Small white-haired dog with a red bow" class="dog-week-image">
+                    <div class="services-menu">
+                        <h3 class="title">Services Menu</h3>
+                        <hr class="dotted">
+                            <div class="grid-services">
+                                <h4>Spa Treatment</h4>
+                                <p> Our Spa treatment package includes full shampoo, conditioning and massage to pamper your pet. It also includes blow dry and brush, ear and teeth cleaning, and face, paw and anal gland expression</p>
+                                <h4> Bath and Haircut</h4>
+                                <p>Our full service package includes a bath, full-body haircut, 15-min brush, nail clipping, and ear cleaning.  </p> 
+                                <h4>Individual Services</h4>
+                                <p> We offer a la cart options including flea treatment, nail clipping, and teeth and ear cleaning. </p>
+                            </div>
+                    </div>
+            </div>
+            <section class="prices">
+                <div class="service-prices">
+                    <div class="card">
+                        <div class="card-title" style="padding-top:10%"> <b>Service Prices</b></div>
+                                <div class="card-content">
+                                    <h4>Full Services</h4>
+                                    <p>Spa Treatment: <b>$50-$75</b></p>
+                                    <p>Bath and Haircut: <b>$35-60</b></p>
+                                    <h4>Individual Services</h4>
+                                    <p>Flea Treatment: <b>$15</b></p>
+                                    <p>Teeth Cleaning: <b>$15</b></p>
+                                    <p>Ear Cleaning: <b>$10</b></p>
+                                    <p>Nail Clipping: <b>$10</b></p>
+                                    <p class="note">*Prices will vary based on size of pet.</p>
+                                </div>
+                    </div>          
+                </div>
+            </section>
+    
+        </section>
+
+        <footer>
+            <p>Images are courtesy of
+                <a href="http://unsplash.com/">unsplash</a>.
+            </p>
+        </footer>
+    </body>
+</html>

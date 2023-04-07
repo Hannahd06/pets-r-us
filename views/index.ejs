@@ -1,0 +1,143 @@
+<!-- 
+======================================
+; Title: Assignment 4.2 Pets-R-Us
+; Author: Professor Kumar
+; Date: April 5, 2023
+; Modified By: Hannah Del Real
+; Description: HTML coding for Landing Page of Pets-R-Us web-page.
+; Sources Used: 
+; Bellevue University Web Dev GitHub: https://github.com/buwebdev/web-340/tree/master/week-4
+; Node.js Setup using Express, HTML, CSS, JS & EJS: https://www.youtube.com/watch?v=A01KtJTv1oc
+;=====================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pet's-R-US Assignment</title>
+        <link rel="stylesheet" href="/styles/site.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,500&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="navbar">
+                <a href="/">Home</a>
+                <div class="dropdown">
+                    <button class="dropBtn">Services
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="services-content">
+                            <a href="#">Boarding</a>
+                            <a href="/grooming">Grooming</a>
+                            <a href="#">Training</a>
+                    </div>
+                </div>    
+                    <a href="">Customers</a>
+                    <a href="">Booking</a>
+                    <a href="">Appointments</a>
+            </div>  
+        </header>
+
+        <section class="hero">
+                <div class="backgroundImage"></div>
+                <h1 class="landing-title">Pets-R-US</h1>
+                <h3>Your one stop shop for all your pet's needs!</h3>
+        </section> 
+        
+        
+        <div class="company-info">
+            <h3 class="title"><strong>About Us</strong></h3>
+            <hr class="dotted">
+            <p> Here at Pets-R-Us we pride ourselves in providing high-quality service for your pets. We offer washes, trims As a pet owner, we know that you love your furry friend. We want to help them look and feel their best. Our services include:</p>
+            <div class="info-grid">
+                <div class="grid-1">
+                    <i class="fa fa-scissors fa-5x" aria-hidden="true"></i>
+                    <p><strong>Grooming</strong></p>
+                </div>
+                <div class="grid-2">
+                    <i class="fa fa-building-o fa-5x" aria-hidden="true"></i>
+                    <p><strong>Boarding</strong></p>
+                </div>
+                <div class="grid-3">
+                    <i class="fa fa-graduation-cap fa-5x" aria-hidden="true"></i>
+                    <p><strong>Training</strong></p>
+                </div>
+            </div>
+                <p> Our groomers are here to help keep your animal's fur and nails looking fresh and clean. With our specialty training services, we can help you to keep your furry friend on their best behavior. We also offering boarding services if you need someone to care for and keep them company while you are away. Your pet is a part of your family, and we wouldn't treat them any other way. Join us today, booking is just one click away!</p>
+        </div>
+
+        <section class="location">
+            <div class="location-container">
+            <h3 class="title">Store Locations </h3>
+            <hr class="dotted">
+            <div class="locationContent"> 
+                <div class="locationAddress"> 
+                    <p>We are currently located in: </p>
+                        <h3>Cerritos</h3>
+                    <p>14113 Town Center Dr,</p>
+                    <p>Cerritos, CA 90703</p> 
+                    
+                        <h3>Anaheim</h3>
+                    <p>1512 Anaheim Blvd,</p>
+                    <p>Anaheim, CA 92805</p> 
+                </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <h4>Location Hours</h4>
+                        </div>
+                        <div class="card-content">
+                    
+                                <p><b>Mon.</b> 8:30 AM - 6:00 PM</p>
+                                <p><b>Tues.</b> 8:30 AM - 6:00 PM</p>
+                                <p><b>Wed.</b> 8:30 AM - 6:00 PM</p>
+                                <p><b>Thurs.</b> 8:30 AM - 6:00 PM</p>
+                                <p><b>Fri.</b> 8:30 AM - 6:00 PM</p>
+                                <p><b>Sat.</b> 9:30 AM - 4:30 PM</p>
+                                <p><b>Sun.</b>9:30 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </section>
+        <section class="dog of the week">
+            <h3 class="title">Dog of the week </h3>
+            <hr class="dotted"><br>
+            <img src="/images/dog-otw.jpg" alt="Adult dog sticking out it's tongue" class="dog-week-image">
+            <div class="dog-content">
+                <p><b>Name: </b> Spot</p>
+                <p><b>Age: </b> 3 years</p>
+                <p><b>Favorite activity:</b> Playing fetch and chasing butterflies in the yard</p>
+                <p><b>Friends: </b>Buttercup and Lucky</p>
+                <p><b>Most loveable quality: </b>Loves belly rubs</p>
+            </div>
+        </section>
+        <br>
+        <hr class="hr-solid">
+
+        <section class="testimonials">
+            <div class="testimonial-container">
+            <h3 class="title">Testimonials</h3>
+            <hr class="dotted">
+            <p class="quote"><i>I was a little nervous at first because I have never used a boarding service before. I have always trusted family members to care Sammy while I'm on a business trip. I took the plunge and boy was I pleasantly surprised. Everyone was so friendly and reassuring. I had to be away for about a week and half, which is pretty long time for being away from him, but the Pets-r-Us team was great with my dog. They took good care of him and sent me an update to put me at ease, while I was away. 10 out of 10! I will be using this service again.</i></p>
+            <p class="author"><b>- Anna D.</b></p>
+            <br>
+            <p class="quote"><i>My dog has never looked better! My little Rufus has unruly curly hair, so maintaining it has been a challenge on my own. I've had terrible experiences in the past with groomers, but the Pets-R-Us groomers are the real deal. His hair was so shiny and soft. They managed to makes his curls look so beautiful, I almost didn't recognize him. Their grooming services have been added to my dog's care routine.</i>></p>
+            <p class="author"> <b>- Justin M.</b></p>
+        </div>
+        </section>
+        <section class="contact">
+            <div class="contact-container">
+                <h3 class="title">Contact Us</h3>
+                <p>For any inquiries, feel free to call us at <b>(562)-924-8312</b>.</p> 
+                <p>We are available <b>Monday-Friday</b>, between <b>9:30am – 7:00pm CST</b>,</p>
+                <p>or e-mail us at <b>info@petsrus.com</b></p>
+            </div>
+        </section> 
+        <footer>
+            <p>Images are courtesy of
+                <a href="http://unsplash.com/">unsplash</a>.
+            </p>
+        </footer>
+    </body>
+</html>
