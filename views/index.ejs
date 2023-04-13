@@ -4,7 +4,7 @@
 ; Author: Professor Kumar
 ; Date: April 5, 2023
 ; Modified By: Hannah Del Real
-; Description: HTML coding for Landing Page of Pets-R-Us web-page.
+; Description: HTML coding for Landing Page of Pets-R-Us web-page
 ; Sources Used: 
 ; Bellevue University Web Dev GitHub: https://github.com/buwebdev/web-340/tree/master/week-4
 ; Node.js Setup using Express, HTML, CSS, JS & EJS: https://www.youtube.com/watch?v=A01KtJTv1oc
@@ -21,22 +21,7 @@
     </head>
     <body>
         <header class="header">
-            <div class="navbar">
-                <a href="/">Home</a>
-                <div class="dropdown">
-                    <button class="dropBtn">Services
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="services-content">
-                            <a href="#">Boarding</a>
-                            <a href="/grooming">Grooming</a>
-                            <a href="#">Training</a>
-                    </div>
-                </div>    
-                    <a href="">Customers</a>
-                    <a href="">Booking</a>
-                    <a href="">Appointments</a>
-            </div>  
+            <%- include('./header.ejs'); %>
         </header>
 
         <section class="hero">
@@ -135,9 +120,7 @@
             </div>
         </section> 
         <footer>
-            <p>Images are courtesy of
-                <a href="http://unsplash.com/">unsplash</a>.
-            </p>
+            <%- include('./footer.ejs'); %>
         </footer>
     </body>
 </html>

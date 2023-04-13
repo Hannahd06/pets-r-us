@@ -1,0 +1,140 @@
+<!-- 
+    ======================================
+    ; Title: Assignment 4.3 Pets-R-Us
+    ; Author: Professor Kumar
+    ; Date: April 12, 2023
+    ; Modified By: Hannah Del Real
+    ; Description: HTML coding for Training Service Page of Pets-R-Us web-page.
+    ; Sources Used: 
+    ; Bellevue University Web Dev GitHub: https://github.com/buwebdev/web-340/tree/master/week-4
+    ; Node.js Setup using Express, HTML, CSS, JS & EJS: https://www.youtube.com/watch?v=A01KtJTv1oc
+    ;=====================================
+    -->
+    
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Pet's-R-US Assignment</title>
+            <link rel="stylesheet" href="/styles/site.css">
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,500&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <header class="header">
+                <%-include('./header.ejs'); %>
+            </header>
+    
+            <section class="hero">
+                <div class="backgroundImage"></div>
+                <h1 class="landing-title">Pets-R-US</h1>
+                <h3>Your one stop shop for all your pet's needs!</h3>
+            </section> 
+            
+            <section class="training">
+                <div class="grooming-container">
+                    <h2 class="title">Training Services</h2>
+                    <p class="groom-content">Raising a pet comes with many rewards, but there are also challenges along the way. 
+                        Good behavior is a learning experience that comes with trail and error, and this can be a challenge to tackle all on your own.
+                         Common concerns can include: 
+                    </p>
+                    <div class="concernList">
+                        <ul class="trainList">
+                            <li>Barking</li>
+                            <li>Shyness</li>
+                            <li>Possessiveness</li>
+                            <li>Pulling on leash</li>
+                            
+                        </ul>
+                        <ul class="trainList">
+                        
+                            <li>Separation <br> anxiety</li>
+                            <li>aggressiveness</li>
+                            <li>Hypersensitivity <br> to noises</li>
+                        </ul>
+                    </div>    
+                    <p class="groom-content">
+                        Pets-R-Us offers training services to help your pet develop important skills and behaviors, such as following basic obedience commands, socialization, and house training.
+                        We believe in using positive reinforcement strategies to make sure your pet is able to learn in a safe and supportive environment, so they can gain confidence to flourish into the best pup they can be.
+                        We have a team of experienced trains that are ready to work with you and your pup to create a training program that is tailored to your specfic needs and goals. Our training programs aren't just limited to behavioral concerns.
+                        We want all pets to achieve the highest quality of life, and our services are nothing short of that. We offer training for owners of deaf, blind, or handicapped dogs to help the better navigate in their environment. 
+                        Our training services any dog owner that needs that extra help and support. 
+                        Dog is man's best friend. Let us help you shape them the best they can be.   
+                       
+                    </p>
+                    <hr class="hr-solid"><br>
+                    <div class="trainers">  
+                        <h3>Meet Our Trainers</h3>
+                        <br>
+                        <hr class="dotted">
+                        <div class="trainer-content">
+                            <div>
+                                <h4>Angelica</h4>
+                                <p class="trainer-bio"><i>Angelica has been training dogs for nearly 10 years. She has a passion for dogs of all personalities and sizes.
+                                    As a proud owner of two furry friends of her own, she is no stranger to understanding first hand how challenging it can be to be a proficient dog owner.
+                                    Through her years as a trainer is has gained valuable experience and techniques to help solve your dog behavior needs. 
+                                    Her greatest pleasure is getting the opportunity to help many pet owners to work to improve their pet's quality of life.
+                                    Her kindness, openness, and ability to actively listen and problem solve has made her a valuable member of the Pets-R-Us team.
+                                    Angelica's training approach is centered around strengthening the bond between dog and owner through positive reinforcement. 
+                                    She believes that training should be a healthy mix of both fun and educational.  </i>
+                                </p>
+                            </div>
+
+                                <img src="images/angelica.jpg" alt="woman hugging dog" class="training-images">
+                    </div>
+                    <div class="trainer-content">
+                        <div>
+                            <h4>Phillip</h4>
+                            <p class="trainer-bio"><i>Phillip has been working with local breeders and trainers since his early teen years. 
+                                He is a certified dog trainer with a solid foundation of 5 years of Dog Training and continues to learn and grow as a professional.
+                                In addition to his years of training, Phillip has spent several years learning and working with pets with special needs so that he can better understand and provide the tools to help them navigate their surroundings in a sustainable way.
+                                His goal as a trainer is to ensure that any and all dogs that enter this program are able to gain  comfort and confidence through a variety of training skills.
+                                Training should be an enjoyable experience for both dogs and owners.
+                                Phillip believes in the power of a team effort and his approach centers around working with owners to provide them with the confidence to help their pets learn and grow into the pet their owner needs them to be.</i>
+                            </p>
+                        </div>
+
+                            <img src="images/Phillip.jpg" alt="woman hugging dog" class="training-images">
+                    </div>  
+                </div>
+                <br><hr class="hr-solid">
+                <section class="prices">
+                    <h2>Training Services Pricing</h2>
+                    <br>
+                    <hr class="dotted">
+                    <div class="trainer-content">
+                        <div class="card">
+                            <div class="card-title"><b>Tier 1</b></div>
+                                    <div class="card-content">
+                                        <p>Puppy basic obedience: <b>$70</b></p>
+                                        <p>Puppy socialization skills: <b>$50</b></p>
+                                        <p>Puppy potty training: <b>$30</b></p>
+                                    </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title"><b>Tier 2</b></div>
+                                    <div class="card-content">
+                                        <p>Adolescence fundamentals: <b>$80</b></p>
+                                        <p>Adolescence confidence building: <b>$45</b></p>
+                                        <p>Adolescence leash walking: <b>$55</b></p>
+                                    </div>
+                        </div> 
+                        <div class="card">
+                            <div class="card-title"><b>Tier 3</b></div>
+                                    <div class="card-content">
+                                        <p>Adult fundamentals: <b>$80</b></p>
+                                        <p>Adult advanced manners: <b>$45</b></p>
+                                        <p>Adult handler skills: <b>$60</b></p>
+                                    </div>
+                        </div>           
+                    </div>
+                </section>
+            </div>
+        
+            </section>
+    
+            <footer>
+                <%- include('./footer.ejs'); %>
+            </footer>
+        </body>
+    </html>
+    

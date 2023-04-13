@@ -1,5 +1,5 @@
 html {
-    font-family: 'open sans', Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #030e12;
 }
 
@@ -8,12 +8,12 @@ section {
 }
 
 
-.navbar {
+.navBar {
     background-color: #5bccf6;
     overflow: hidden;
 }
 
-.navbar a {
+.navBar a {
     font-size: 22px;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
@@ -79,7 +79,7 @@ section {
     background-image: url('../images/landing-pet.jpg');
     background-size: cover;
     width:100%;
-    height: 50%;
+    height: 70%;
     position:absolute; 
     z-index: -1; 
 }
@@ -93,30 +93,30 @@ section {
 }
 
 .hero h3 {
-    font-size: 20px;
+    font-size: 25px;
     color: #4a4a4a;
     padding-left: 40px;
     margin-top: -40px;
-    margin-bottom: 60px;
 }
 
 
 .title {
-    font-size: 45px;
+    font-size: 60px;
     text-align: center;
     font-family: "open sans", Arial, sans-serif;
 
 }
 
 .dotted {
-    border-top: 5px dotted #fcde67;
+    border-top: 5px dotted orange;
     text-align: center;
     width: 50%;
-    margin-top: -30px;  
-    margin-bottom: 30px;
+    margin-top: -50px;  
+    margin-bottom: 50px;
 } 
 
 .company-info {
+    margin-top: 200px;
     margin-left: 30px;
     margin-right: 30px;
     padding: 20px;
@@ -145,7 +145,7 @@ section {
  background-color: #cff2ff;
  margin: auto;
  width:80%;
- padding-bottom: 50px;
+ padding: 30px;
 }
 
 .location-container .title {
@@ -160,6 +160,12 @@ section {
     column-gap: 80px;
 }
 
+@media (max-width: 800px) {
+    .locationContent {
+       flex-direction: column;
+    }
+}
+
 .locationAddress {
     font-size: 25px;
     text-align: center;
@@ -167,9 +173,10 @@ section {
 
 .card {
     background-color: #fcde67;
-    padding-left: 30px;
-    padding-right: 30px;
     text-align: center;
+    margin: auto;
+    padding: 20px 50px;
+    box-shadow: 0 8px 16px 0 rgba(49, 33, 17, 0.2)
 }
     
 .card-title {
@@ -178,8 +185,7 @@ section {
 }
 
 .card-content {
-    text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 20px;
     padding-bottom: 20px;
     
@@ -230,6 +236,10 @@ section {
 
 }
 
+.grooming-container {
+    margin-top: 240px;
+}
+
 .contact-container p {
     font-size: 25px;
     text-align: center;
@@ -247,21 +257,23 @@ footer a {
     padding-right: 20px;
 }
 
+
 .groom-content {
     font-family: "open-sans", Arial, sans-serif;
     font-size: 22px;
     text-align: center;
-    margin: 20px 30px;
+    margin: 20px 80px;
+    margin-bottom: 60px;
 }
 
 
 .services-menu {
     background-color: #cff2ff;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
     text-align: center;
-    padding: 0px 30px 10px 30px;
-    margin-bottom: 30px;
+    padding: 0px 30px 20px 30px;
+    margin-bottom: 60px;
 }
 .services-menu h4 {
     padding-top: 10px;
@@ -272,11 +284,14 @@ footer a {
 
 .services-menu p {
     font-size: 20px;
+    margin-top: -50px;
+    padding-bottom: 20px;
 }
 
 .service-prices {
     margin: auto;
     width: 600px;
+    margin-bottom: 100px;
 }
 
 .prices .card-title {
@@ -285,6 +300,129 @@ footer a {
 
 .prices p, .prices h4 {
     text-align: center;
+}
+.boarding {
+    margin-bottom: 100px;
+}
+
+.ammenities {
+    margin: 30px 150px;
+    background-color: #cff2ff;
+    padding: 20px 40px;
+}
+
+.ammenities-title {
+    font-size: 22px;
+}
+    
+.ammenities h3 {
+    text-align: center;
+}
+
+.ammenities p {
+    margin-top: -10px;
+}
+
+.boardingImages {
+    display: flex;
+    justify-content: center;
+}
+
+.boarding-images {
+    float: left;
+    max-width: 33.33%;
+    padding: 15px;
+}
+
+.concernList {
+    margin-top: -50px;
+    text-align: center;
+
+}
+
+.trainList {
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    flex: 50%;
+    margin-left: 20px;
+
+}
+
+.trainList li {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.trainers {
+   background-color: #cff2ff;
+   margin: 20px 90px;
+   background-color: #cff2ff;
+   padding: 20px 40px;
+} 
+
+.trainers h3 {
+    font-size: 40px;
+    text-align: center;
+} 
+
+
+.trainer-content {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .trainer-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.trainer-content h4 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: -3px;
+}
+
+.trainer-bio {
+    text-align: center;
+    font-size: 20px;
+    padding: 0px 20px 40px 20px;
+}
+
+.training-images {
+    width: 500px;
+    padding: 30px 40px;
+
+}
+
+@media (max-width: 800px) {
+    .training-images {
+       margin-left: -15px;
+        width: 90%;
+    }
+}
+
+.prices h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: "open sans", Arial, sans-serif;
+    margin-bottom: 50px;
+}
+
+.trainer-content .card {
+    margin: 20px;
+    width: 33.3%;
+}
+
+@media (max-width: 800px) {
+    .trainer-content .card {
+        margin: auto;
+        margin-bottom: 30px;
+    }
 }
 
 

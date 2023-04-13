@@ -24,6 +24,20 @@ app.get('/grooming', (req,res) => {
     })
 });
 
+app.get('/boarding', (req,res) => {
+    res.render("boarding", {
+        title: "Pets-R-Us: Boarding",
+        pageTitle: "Pets-R-Us: Boarding Page"
+    })
+});
+
+app.get('/training', (req,res) => {
+    res.render("training", {
+        title: "Pets-R-Us: Training",
+        pageTitle: "Pets-R-Us: Training Page"
+    })
+});
+
 //listen on port 3000.
 app.listen(PORT, () => {
     console.log("Application started listening on PORT " + PORT);

@@ -1,0 +1,78 @@
+<!-- 
+    ======================================
+    ; Title: Assignment 4.2 Pets-R-Us
+    ; Author: Professor Kumar
+    ; Date: April 5, 2023
+    ; Modified By: Hannah Del Real
+    ; Description: HTML coding for Grooming Service Page of Pets-R-Us web-page.
+    ; Sources Used: 
+    ; Bellevue University Web Dev GitHub: https://github.com/buwebdev/web-340/tree/master/week-4
+    ; Node.js Setup using Express, HTML, CSS, JS & EJS: https://www.youtube.com/watch?v=A01KtJTv1oc
+    ;=====================================
+    -->
+    
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Pet's-R-US Assignment</title>
+            <link rel="stylesheet" href="/styles/site.css">
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,500&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+        <body>
+            <header class="header">
+                <%- include('./header.ejs'); %>
+            </header>
+    
+            <section class="hero">
+                <div class="backgroundImage"></div>
+                <h1 class="landing-title">Pets-R-US</h1>
+                <h3>Your one stop shop for all your pet's needs!</h3>
+            </section> 
+            
+            <section class="boarding">
+                <div class="grooming-container">
+                    <h2 class="title">Boarding Services</h2>
+                    <p class="groom-content">We understand that everyone has a busy schedule and life events or obligations may require us to have to be away from our. For any loving pet parent, deciding where and whom to entrust our pets with can be challenging because we want to make sure that they are properly cared for. We understand that this can be a difficult transition for both you and your pets and we want to help. Pets-R-Us offers only the best boarding services for your special friend. We work hard to ensure all pets receive only pampered services as every pet that comes through our doors is treated as a member of our own family. We offer a variety of hotel-quality amenities to ensure comfort and quality throughout your pet's stay while you are away.</p>
+                    <div class="ammenities">  
+                        <h3>With our boarding services your pets can enjoy:</h3>
+                        <h4 class="ammenities-title">A safe and dog-friendly environment</h4>
+                        <p><i>Our boarding services are built just for dogs. Our staff is dedicated to providing a safe, secure, and loving environment for all dogs that stay in our boarding facility. They are ready and willing to supply your pet with all of the love and attention they deserve. With us, your pets can spend their days in good company, of the the doggy and human variety. Our facilities allow you pets plenty of comfy spots to rest and relax in, the option to eat their own dog food and plenty of time for potty breaks in between the fun.</i></p>
+                        <h4 class="ammenities-title">A private Boarding Room</h4>
+                        <p><i>We offer plenty of privacy and space. In our private rooms, pets can enjoy their meals and relax post-meal. We want your pet to feel as comfortable as possible. Our play areas offer soft flooring and synthetic grass for your pets to enjoy. Feel free to bring any bedding or toys so your pet can feel at home, however, we are more than happy to provide these items, free of charge. We hope to make you feel at ease knowing that our staff is here to ensure that your pet is monitored, fed, and care for, so that you can relax during your time away.</i></p>  
+                        <h4 class="ammenities-title">High-quality Individualized Care</h4>
+                        <p><i>Pets-R-Us offers a safe and nurturing environment for all pets who stay with us. Every pet has their own personality and needs. We provide daytime exercise, tailored to each dog's level of energy and social skills. Your pets have the option of socializing with other dogs of similar sizes with our supervised play sessions. Dogs who prefer more Individualized human interactions, have the option to enjoy one-on-one walks with one of our staff members. Our staff is dedicated to providing personalized care to ensure that every pet feels right at home in our care.</i></p>
+                    </div>
+                    <div class="boardingImages">
+                        <img src="images/boarding-pug-blanket.jpg" alt="pug in a blanket" class="boarding-images">
+                        <img src="images/boarding-pup-hotel.jpg" alt="pug in a blanket" class="boarding-images">
+                        <img src="images/boarding-pup-reading.jpg" alt="pug in a blanket" class="boarding-images">
+                    </div>
+                    <br>
+                    <hr class="hr-solid"><br>
+                </div>
+                <div class="prices">
+                    <div class="service-prices">
+                        <div class="card">
+                            <div class="card-title"><b>Boarding Service Prices</b></div>
+                                    <div class="card-content">
+                                        <p>1 dog up to 5 nights: <b>$60/night</b></p>
+                                        <p>1 dog 6 or more nights: <b>$55/night</b></p>
+                                        <p>2 dogs up to 5 nights: <b>$75/night</b></p>
+                                        <p>2 dog 6 or more nights: <b>$65/night</b></p>
+                                        <p>3 dogs up to 5 nights: <b>$90/night</b></p>
+                                        <p>3 dog 6 or more nights: <b>$75/night</b></p>
+                                    </div>
+                        </div>          
+                    </div>
+                </div>
+        
+            </section>
+    
+            <footer>
+                <%- include('./footer.ejs'); %>
+            </footer>
+        </body>
+    </html>
+    
