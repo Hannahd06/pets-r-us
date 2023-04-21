@@ -22,20 +22,21 @@
     </head>
     <body>
         <header class="header">
-            <%- include('./header.ejs'); %>
+            <%- include('./partials/header.ejs'); %>
         </header>
 
         <section class="hero">
             <div class="backgroundImage"></div>
             <h1 class="landing-title">Pets-R-US</h1>
             <h3>Your one stop shop for all your pet's needs!</h3>
+            <a href="./register" class="btn btn-primary" id="btnRegister">Sign up for a free account</a>
         </section> 
         
         <section class="grooming">
             <div class="grooming-container">
                 <h2 class="title">Grooming Services</h2>
                 <p class="groom-content"><i>Image is everything</i>, and just like people, pets also want to look and feel their best. <br> <br> Our Pets-R-Us groomers offer high quality styling services to help owners continue to keep their pets looking healthy and beautiful. Our staff is trained to ensure a positive experience for both you and your pet. Our grooming services range from full service to a la cart options, so we are here for you whether your pet needs the works or just a touch up. To ensure your pet has is given the utmost care, our staff will do a brief assessment of your pet's skin, coat, ears, nails, and teeth so that they can properly address any unique needs. When booking your appointment, we highly recommend providing us with any specific allergies or concerns so that we can provide you and your pet with the appropriate accommodations to ensure only the best care. <br></p>
-                <img src="images/grooming-pet.jpg" alt="Small white-haired dog with a red bow" class="dog-week-image"> <br><br>
+                <img src="./images/grooming-pet.jpg" alt="Small white-haired dog with a red bow" class="dog-week-image"> <br><br>
                 <br><hr class="hr-solid"><br>    
                 <div class="services-menu">
                         <h3 class="title">Services Menu</h3>
@@ -72,7 +73,7 @@
         </section>
 
         <footer>
-            <%- include('./footer.ejs'); %>
+            <%- include('./partials/footer.ejs'); %>
         </footer>
     </body>
 </html>

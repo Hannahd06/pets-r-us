@@ -22,13 +22,14 @@
         </head>
         <body>
             <header class="header">
-                <%- include('./header.ejs'); %>
+                <%- include('./partials/header.ejs'); %>
             </header>
     
             <section class="hero">
                 <div class="backgroundImage"></div>
                 <h1 class="landing-title">Pets-R-US</h1>
                 <h3>Your one stop shop for all your pet's needs!</h3>
+                <a href="./register" class="btn btn-primary" id="btnRegister">Sign up for a free account</a>
             </section> 
             
             <section class="boarding">
@@ -45,9 +46,9 @@
                         <p><i>Pets-R-Us offers a safe and nurturing environment for all pets who stay with us. Every pet has their own personality and needs. We provide daytime exercise, tailored to each dog's level of energy and social skills. Your pets have the option of socializing with other dogs of similar sizes with our supervised play sessions. Dogs who prefer more Individualized human interactions, have the option to enjoy one-on-one walks with one of our staff members. Our staff is dedicated to providing personalized care to ensure that every pet feels right at home in our care.</i></p>
                     </div>
                     <div class="boardingImages">
-                        <img src="images/boarding-pug-blanket.jpg" alt="pug in a blanket" class="boarding-images">
-                        <img src="images/boarding-pup-hotel.jpg" alt="pug in a blanket" class="boarding-images">
-                        <img src="images/boarding-pup-reading.jpg" alt="pug in a blanket" class="boarding-images">
+                        <img src="./images/boarding-pug-blanket.jpg" alt="pug in a blanket" class="boarding-images">
+                        <img src="./images/boarding-pup-hotel.jpg" alt="pug in a blanket" class="boarding-images">
+                        <img src="./images/boarding-pup-reading.jpg" alt="pug in a blanket" class="boarding-images">
                     </div>
                     <br>
                     <hr class="hr-solid"><br>
@@ -71,7 +72,7 @@
             </section>
     
             <footer>
-                <%- include('./footer.ejs'); %>
+                <%- include('./partials/footer.ejs'); %>
             </footer>
         </body>
     </html>

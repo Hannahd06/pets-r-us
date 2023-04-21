@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pet's-R-US Assignment</title>
+        <link rel="stylesheet" href="/styles/site.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,500&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header class="header">
+            <%- include('./partials/header.ejs'); %>
+        </header>
+
+        <section class="hero">
+                <div class="backgroundImage"></div>
+                <h1 class="landing-title">Pets-R-US</h1>
+                <h3>Your one stop shop for all your pet's needs!</h3>
+                <a href="./register" class="btn btn-primary" id="btnRegister">Sign up for a free account</a>
+            </section> 
+        <section>
+            <div class="company-info">
+                <h1 class="title">Registration Form</h1>
+                <div class="service-prices">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="form">
+                                <form action="/customer" method="post">
+                                    <div class="form-field">
+                                        <label for="customerId">Customer ID</label>
+                                        <input type="text" name="customerId" id="customerId">
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="email">Email</label>
+                                        <input type="text" name="email" id="email">
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="submit" value="Sign Up" class="btn btn-primary" ></input>
+                                    </div>
+                                </form>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <%- include('./partials/footer.ejs'); %>
+        </footer>
+    </body>
+</html>
