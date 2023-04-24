@@ -59,7 +59,7 @@ app.get('/register', (req,res) => {
     })
 });
 
-app.post('/customer', (req, res, next) => {
+app.post('/customers', (req, res, next) => {
     console.log(req.body);
     const newCustomer = new Customer({
         customerId: req.body.customerId,
@@ -68,7 +68,7 @@ app.post('/customer', (req, res, next) => {
 
     console.log(newCustomer);
 
-    Customer.create(newCustomer, function(err, newCustomer) {
+    Customer.create(newCustomer, function(err, customer) {
         if (err) {
             console.log(err);
             next(err);
@@ -80,6 +80,19 @@ app.post('/customer', (req, res, next) => {
     })
 })
 
+app.get('/customers', (req, res) => {
+    Customer.find({}, function(err, customers) {
+        if (err) {
+            console.log(err);
+            next(err); 
+        } else {
+            res.render('customer-list', {
+                title: 'Pets-R-US: Customer List',
+                customers: customers
+            })
+        }
+    })
+}) 
 
 //listen on port 3000.
 app.listen(PORT, () => {
