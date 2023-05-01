@@ -1,8 +1,11 @@
+"use strict";
 const express = require("express");
 const path = require("path");
 const mongoose =require("mongoose");
+const fs = require('fs');
 
 const Customer = require("./models/customer");
+const Appointment = require("./models/appointment")
 
 const app = express();
 
@@ -93,6 +96,41 @@ app.get('/customers', (req, res) => {
         }
     })
 }) 
+
+app.get('/booking', (req, res) => {
+    let jsonFile = fs.readFileSync('./public/data/services.json');
+    let services = JSON.parse(jsonFile);
+    
+    console.log(services);
+
+    res.render('booking', {
+        title: "Pets-R-Us: Book Appointment",
+        message: "Pets-R-Us: Book Appointment Page",
+        services: services
+    })
+});
+
+app.post('/appointments', (req, res, next) => {
+    const newAppointment = new Appointment({
+        userName: req.body.userName,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        email: req.body.email,
+        service: req.body.service
+
+    });
+
+    Appointment.create(newAppointment, function(err, appointment) {
+        if (err) {
+            console.log(err);
+            next(err);
+        } else {
+            res.render('index', {
+                title: 'Pets-R-Us: Home'
+            })
+        }
+    })
+});
 
 //listen on port 3000.
 app.listen(PORT, () => {
