@@ -117,8 +117,9 @@ app.post('/appointments', (req, res, next) => {
         lastName: req.body.lastName,
         email: req.body.email,
         service: req.body.service
-
     });
+
+    console.log(newAppointment);
 
     Appointment.create(newAppointment, function(err, appointment) {
         if (err) {
