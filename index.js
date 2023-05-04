@@ -110,7 +110,7 @@ app.get('/booking', (req, res) => {
     })
 });
 
-app.post('/appointments', (req, res, next) => {
+app.post('/booking', (req, res, next) => {
     const newAppointment = new Appointment({
         userName: req.body.userName,
         firstName: req.body.firstName,
