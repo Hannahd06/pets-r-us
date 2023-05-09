@@ -75,6 +75,8 @@ section {
     padding: 20px;
 }
 
+/* Heading stylings*/
+
 .hero .backgroundImage {
     background-image: url('../images/landing-pet.jpg');
     background-size: cover;
@@ -83,6 +85,23 @@ section {
     position:absolute; 
     z-index: -1; 
 }
+
+
+/* footer styling*/
+
+footer {
+    margin-top: 20px;
+    background-color: #3dc4f5;
+    padding: 0.5px;
+    text-align: right;
+    color: #f9feff;
+}
+footer a {
+    color: #fcde67;
+    padding-right: 20px;
+}
+
+/* General header stylings*/
 
 .hero h1 {
     padding-left: 40px;
@@ -114,6 +133,8 @@ section {
     margin-top: -50px;  
     margin-bottom: 50px;
 } 
+
+/* landing page stylings*/
 
 .company-info {
     margin-top: 120px;
@@ -169,26 +190,6 @@ section {
     margin: auto;
 }
 
-.card {
-    background-color: #fcde67;
-    text-align: center;
-    margin: auto;
-    padding: 20px 50px;
-    box-shadow: 0 8px 16px 0 rgba(49, 33, 17, 0.2)
-}
-    
-.card-title {
-    font-family: "open sans", Arial, sans-serif;
-    font-size: 30px;
-    padding-top: 20px;
-}
-
-.card-content {
-    font-size: 18px;
-    padding-bottom: 20px;
-    
-}
-
 .dog-week-image {
     display: block;
     margin-left: auto;
@@ -231,11 +232,8 @@ section {
     padding: 20px;
     width: 80%;
     margin: auto;
+    margin-bottom: 80px;
 
-}
-
-.grooming-container {
-    margin-top: 240px;
 }
 
 .contact-container p {
@@ -243,18 +241,36 @@ section {
     text-align: center;
 }
 
-footer {
-    margin-top: 20px;
-    background-color: #3dc4f5;
-    padding: 0.5px;
-    text-align: right;
-    color: #f9feff;
+
+/* Card styling*/
+
+.card {
+    background-color: #fcde67;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 8px 16px 0 rgba(49, 33, 17, 0.2)
 }
-footer a {
-    color: #fcde67;
-    padding-right: 20px;
+    
+.card-title {
+    font-family: "open sans", Arial, sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
 }
 
+
+.card-content {
+    font-size: 18px;
+    padding: 10px 30px 20px 30px;
+    
+}
+
+/* top margin for page content*/
+
+.grooming-container {
+    margin-top: 240px;
+}
+
+/* Grooming page styling*/
 
 .groom-content {
     font-family: "open-sans", Arial, sans-serif;
@@ -264,17 +280,16 @@ footer a {
     margin-bottom: 60px;
 }
 
-
 .services-menu {
     background-color: #cff2ff;
     margin-left: 100px;
     margin-right: 100px;
     text-align: center;
-    padding: 0px 30px 20px 30px;
+    padding: 2px 30px 10px 30px;
     margin-bottom: 60px;
 }
+
 .services-menu h4 {
-    padding-top: 10px;
     font-size: 25px;
     font-family: 'Quicksand', Arial, sans-serif;
     padding-bottom: 30px;
@@ -286,11 +301,14 @@ footer a {
     padding-bottom: 20px;
 }
 
+/*styling for pricing cards for all service pages*/
+
 .service-prices {
     margin: auto;
     width: 600px;
     margin-bottom: 100px;
 }
+
 
 .prices .card-title {
     font-size: 35px;
@@ -299,6 +317,9 @@ footer a {
 .prices p, .prices h4 {
     text-align: center;
 }
+
+/*boarding page styling*/
+
 .boarding {
     margin-bottom: 100px;
 }
@@ -332,10 +353,11 @@ footer a {
     padding: 15px;
 }
 
+/*Training page styling*/
+
 .concernList {
     margin-top: -50px;
     text-align: center;
-
 }
 
 .trainList {
@@ -344,7 +366,6 @@ footer a {
     font-size: 18px;
     flex: 50%;
     margin-left: 20px;
-
 }
 
 .trainList li {
@@ -364,7 +385,6 @@ footer a {
     text-align: center;
 } 
 
-
 .trainer-content {
     display: flex;
     flex-direction: row;
@@ -372,7 +392,7 @@ footer a {
     align-items: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .trainer-content {
         flex-direction: column;
         justify-content: center;
@@ -416,14 +436,14 @@ footer a {
     width: 33.3%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .trainer-content .card {
         margin: auto;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 }
 
-/* Styling for buttons */
+/* Styling for buttons. */
 
 .btn {
     border: 2px solid #fff;
@@ -438,10 +458,10 @@ footer a {
     color:black;
     font-size: 22px;
     font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-
-    
+    font-family: Arial, Helvetica, sans-serif; 
  }
+
+ /*Styling for forms.*/
 
  .form-field {
     margin: auto;
@@ -476,9 +496,24 @@ footer a {
     margin-left: 120px;
 }
 
-/* styling for customer list table. */
+.drop-down-menu {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.full-width {
+    width: 100%;
+}
+
+
+/* Styling for tables. */
 #table {
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .table {
@@ -502,15 +537,6 @@ footer a {
     background-color: white;
 }
 
-.drop-down-menu {
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid var(--input-border-color);
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.full-width {
-    width: 100%;
+#appointments {
+    padding-bottom: 40px;
 }

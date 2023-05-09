@@ -27,23 +27,23 @@
                             <div class="form">
                                 <form action="/booking" method="post">
                                     <div class="form-field">
-                                        <label for="userName">Username</label>
+                                        <label for="userName"><b>Username</b></label>
                                         <input type="text" name="userName" id="userName" required autofocus>
                                     </div>
                                     <div class="form-field">
-                                        <label for="firstName">First Name</label>
+                                        <label for="firstName"><b>First Name</b></label>
                                         <input type="text" name="firstName" id="firstName" required autofocus>
                                     </div>
                                     <div class="form-field">
-                                        <label for="lastName">Last Name</label>
+                                        <label for="lastName"><b>Last Name</b></label>
                                         <input type="text" name="lastName" id="lastName" required autofocus>
                                     </div>
                                     <div class="form-field">
-                                        <label for="email">Email</label>
+                                        <label for="email"><b>Email</b></label>
                                         <input type="text" name="email" id="email" required autofocus>
                                     </div>
                                     <div class="form-field">
-                                        <label for="service">Select Service</label>
+                                        <label for="service"><b>Select Service</b></label>
                                         <select name="service" id="service" class="drop-down-menu" required>
                                             <% services.forEach((service) => { %>
                                             <option value="'<%= service.value %>'"><%= service.text %></option>

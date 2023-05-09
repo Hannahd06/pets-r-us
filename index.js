@@ -133,6 +133,25 @@ app.post('/booking', (req, res, next) => {
     })
 });
 
+app.get('/my-appointments', (req, res) => {
+    res.render('my-appointments', {
+        title: "Pets-R-Us: My Appointments",
+        pageTitle: 'Appointment Lookup Form'
+    })
+})
+
+app.get('/api/appointments/:email', async(req, res, next) => {
+    Appointment.find({'email': req.params.email}, function(err, appointments) {
+        if (err) {
+            console.log(err);
+            next(err);
+        } else {
+            res.json(appointments);
+        }
+    })
+})
+
+
 //listen on port 3000.
 app.listen(PORT, () => {
     console.log("Application started listening on PORT " + PORT);
